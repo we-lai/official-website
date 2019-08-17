@@ -3,7 +3,7 @@
     <div class="c-d-f c-js-sb f-top">
       <div class="f-top-content">
         <p>关于昕誉</p>
-        <a href="" class="font-grey tp-20">公司简介</a>
+        <a href="" class="font-grey tp-20">公司 简介</a>
       </div>
       <div class="f-top-content">
         <p >联系我们</p>
