@@ -40,15 +40,17 @@ export default {
   //   width: 50%;
   // }
   .brand-title {
-    font-size: 34px;
+    font-size: 30px;
     color: $black;
     text-align: center;
+    margin-top: 30px;
   }
   .img-wrap {
     display: flex;
     flex-wrap: wrap;
     max-width: 82%;
     margin: 30px auto;
+    padding-bottom: 100px;
     .img-border {
       display: block;
       width: 180px;

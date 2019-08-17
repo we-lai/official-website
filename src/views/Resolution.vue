@@ -45,9 +45,10 @@ export default {
 <style lang="scss">
 .v-resolution {
   .brand-title {
-    font-size: 28px;
+    font-size: 30px;
     color: $black;
     text-align: center;
+    margin-top: 30px;
   }
   .brand-title-grey {
     color: gray;
