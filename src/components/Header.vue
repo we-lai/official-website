@@ -4,7 +4,7 @@
       <img class="img" src="../assets/logo.png" />
       <img class="text" src="../assets/logo-text.png" />
     </div>
-    <div class="menus">
+    <div class="menus horizontal">
       <router-link
         tag="span"
         class="menu-item"
@@ -13,6 +13,18 @@
         v-for="i in menus"
         :key="i.name">{{ i.name }}
       </router-link>
+    </div>
+    <div class="menus vertical">
+      <div class="icon" @click.stop="showDropdownMenus = true">三</div>
+      <div class="list" v-show="showDropdownMenus">
+        <div
+          class="menu-item"
+          :class="{ 'actived': activedPath === i.url }"
+          @click="toUrl(i.url)"
+          v-for="i in menus"
+          :key="i.name">{{ i.name }}
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -43,11 +55,27 @@ export default {
           url: '/about',
           name: '关于我们'
         }
-      ]
+      ],
+      showDropdownMenus: false
     }
   },
   computed: {
     ...mapState([ 'activedPath' ])
+  },
+  methods: {
+    toUrl (url) {
+      this.$router.push(url)
+      this.hideDropdwonMenus()
+    },
+    hideDropdwonMenus () {
+      this.showDropdownMenus = false
+    }
+  },
+  mounted () {
+    window.addEventListener('click', this.hideDropdwonMenus)
+  },
+  destroyed () {
+    window.removeEventListener('click', this.hideDropdwonMenus)
   }
 }
 </script>
@@ -62,6 +90,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
+  z-index: 100;
+  box-shadow: 0 2px 24px 5px rgba(13,37,62,.1);
   .logo {
     margin-left: 50px;
     display: flex;
@@ -75,16 +106,58 @@ export default {
     }
   }
   .menus {
-    display: flex;
-    line-height: 60px;
-    margin-right: 50px;
+    &.horizontal {
+      display: flex;
+      line-height: 60px;
+      margin-right: 50px;
+      .menu-item {
+        margin-left: 20px;
+      }
+    }
+    &.vertical {
+      position: relative;
+      padding-right: 37px;
+      line-height: 66px;
+      text-align: right;
+      font-weight: 700;
+      width: 86px;
+      .icon {
+        cursor: pointer;
+      }
+      .list {
+        position: absolute;
+        left: 0;
+        top: 90%;
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        border-top: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+        .menu-item {
+          height: 34px;
+          line-height: 34px;
+          font-weight: 400;
+        }
+      }
+    }
     .menu-item {
-      margin-left: 20px;
       cursor: pointer;
       &.actived {
         color: $blue;
       }
     }
+    @media (max-width:768px) {
+      &.horizontal {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      &.vertical {
+        display: none;
+      }
+    }
   }
 }
+
 </style>
