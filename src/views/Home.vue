@@ -132,7 +132,7 @@
           <img src="../assets/index/icon17.png">
           <div>
             <p class="title">服务器软硬件</p>
-            <p class="desc">服务器软硬件</p>
+            <p class="desc">服务器硬件销售</p>
           </div>
         </div>
         <div class="item">

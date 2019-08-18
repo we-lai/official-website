@@ -1,7 +1,7 @@
 <template>
   <div class="v-ability">
     <p class="brand-title">产品简介</p>
-    <p class="ability-text">昕誉DataMagic是昕誉信息科技自主研发的一款数据融合产品，无需任何代码，
+    <p class="ability-text">昕誉 DataMagic 是昕誉信息科技自主研发的一款数据融合产品，无需任何代码，
       通过可视化图形配置界面只需 5 分钟即可自服务部署一条实时数据管道，
       并提供丰富的管理功能：数据批流一体、数据质量管控、数据任务流管理，可视化运维管理、
       错误队列管理、用户管理、元数据管理等，帮助客户实现高效地连接复杂的异构数据源和目的地，
@@ -34,7 +34,7 @@
         </li>
         <li class="intro-item">
           元数据管理
-          <p class="intro-text-sm">可查看或修改已连接DataMagic的所有数据
+          <p class="intro-text-sm">可查看或修改已连接 DataMagic 的所有数据
             源的技术元数据、业务元数据、样例数据。核心功能：技术元数据、业务元数据、样例
             数据、历史表结构变化。
           </p>
