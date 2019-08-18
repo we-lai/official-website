@@ -1,14 +1,10 @@
 <template>
   <footer class="v-footer">
-    <div class="c-d-f c-js-sb f-top">
-      <div class="f-top-content">
-        <p>关于昕誉</p>
-        <a href="" class="font-grey tp-20">公司简介</a>
-      </div>
+    <div class="f-top">
       <div class="f-top-content">
         <p >联系我们</p>
-        <p class="font-grey tp-20">产品销售 xiecheng@xinyumation.com</p>
-        <p class="font-grey">人才招聘 caichunqin@xinyumation.com</p>
+        <p class="font-grey tp-20">产品销售 songfeixiang@xinyumation.com</p>
+        <p class="font-grey">人才招聘 xiecheng@xinyumation.com</p>
       </div>
       <div class="f-top-content">
         <p>官方微信二维码</p>
@@ -16,7 +12,7 @@
       </div>
     </div>
     <div class="font-grey">
-      <p>@2019 上海昕誉信息科技有限公司 版权所有.</p>
+      <p class="c-fs-14">Copyright@2019  沪ICP备19028457号</p>
     </div>
   </footer>
 </template>
@@ -34,7 +30,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 40px 0px;
-  height: 350px;
   @media screen and (max-width: 720px) {
     height: 650px;
   }
@@ -53,16 +48,14 @@ export default {
       flex-direction: column;
     }
     width: 80%;
-    height: 70%;
     padding-bottom: 20px;
     color: #fff;
     font-size: 18px;
-    border-bottom: 1px solid grey;
     a {
       text-decoration: none;
     }
     .tp-20 {
-      margin-top: 30px;
+      margin: 30px auto;
       display: block;
     }
   }
