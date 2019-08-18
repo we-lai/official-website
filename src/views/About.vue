@@ -26,15 +26,17 @@ export default {
   margin-bottom: 100px;
   .brand-title {
     font-size: 30px;
+    font-weight: 300;
     color: $black;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .text-wrap {
-    width: 70%;
+    width: 80%;
     margin: 40px auto;
     .about-text {
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 300;
       line-height: 40px;
       text-indent: 1cm;
     }

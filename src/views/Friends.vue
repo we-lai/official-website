@@ -29,9 +29,10 @@ export default {
   margin-bottom: 100px;
   .brand-title {
     font-size: 30px;
+    font-weight: 300;
     color: $black;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .img-wrap {
     display: flex;
@@ -42,6 +43,7 @@ export default {
       display: block;
       width: 15%;
       margin-left: 1%;
+      opacity: .75;
       @media screen and (max-width: 960px) {
         width: 30%;
         margin-left: 2%;
@@ -56,7 +58,10 @@ export default {
       }
       height: 120px;
       margin-bottom: 10px;
-      border: 1px solid rgb(216, 215, 215);
+      border: 1px solid rgb(236, 234, 234);
+      &:hover {
+        opacity: 1;
+      }
     }
     .bg-pic1 {
       background: url("../assets/fanwei.jpg") center no-repeat;
