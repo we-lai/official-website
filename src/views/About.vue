@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss">
 .v-about {
+  margin-bottom: 100px;
   .brand-title {
     font-size: 30px;
     color: $black;

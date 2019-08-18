@@ -15,16 +15,6 @@
       <div class="img-border bg-pic6">
       </div>
     </div>
-    <!-- <div class="container">
-      <div class="row" style="border: 1px solid green">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 img-wh" style="border: 1px solid green"><img src="../assets/fanwei.jpg"/></div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 img-wh" style="border: 1px solid green"><img src="../assets/yongyou.jpg"/></div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 img-wh" style="border: 1px solid green"><img src="../assets/fanruan.jpg"/></div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 img-wh" style="border: 1px solid green"><img src="../assets/jindie.jpg"/></div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 img-wh" style="border: 1px solid green"><img src="../assets/lanling.jpg"/></div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 img-wh" style="border: 1px solid green"><img src="../assets/zhiyuan.png"/></div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -36,9 +26,7 @@ export default {
 
 <style lang="scss">
 .v-friends {
-  // .img-wh {
-  //   width: 50%;
-  // }
+  margin-bottom: 100px;
   .brand-title {
     font-size: 30px;
     color: $black;
@@ -48,15 +36,27 @@ export default {
   .img-wrap {
     display: flex;
     flex-wrap: wrap;
-    max-width: 82%;
+    max-width: 80%;
     margin: 30px auto;
-    padding-bottom: 100px;
     .img-border {
       display: block;
-      width: 180px;
+      width: 15%;
+      margin-left: 1%;
+      @media screen and (max-width: 960px) {
+        width: 30%;
+        margin-left: 2%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 44%;
+        margin-left: 4%;
+      }
+       @media screen and (max-width: 414px) {
+        width: 90%;
+        margin-left: 5%;
+      }
       height: 120px;
+      margin-bottom: 10px;
       border: 1px solid rgb(216, 215, 215);
-      margin: 10px;
     }
     .bg-pic1 {
       background: url("../assets/fanwei.jpg") center no-repeat;
