@@ -191,6 +191,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     &.production {
       .item {
         width: 90%;

@@ -1,28 +1,30 @@
 <template>
   <header class="c-header">
-    <div class="logo">
-      <img class="img" src="../assets/logo.png" />
-      <img class="text" src="../assets/logo-text.png" />
-    </div>
-    <div class="menus horizontal">
-      <router-link
-        tag="span"
-        class="menu-item"
-        :class="{ 'actived': activedPath === i.url }"
-        :to="i.url"
-        v-for="i in menus"
-        :key="i.name">{{ i.name }}
-      </router-link>
-    </div>
-    <div class="menus vertical">
-      <div class="icon" @click.stop="showDropdownMenus = true">三</div>
-      <div class="list" v-show="showDropdownMenus">
-        <div
+    <div class="content">
+      <div class="logo">
+        <img class="img" src="../assets/logo.png" />
+        <img class="text" src="../assets/logo-text.png" />
+      </div>
+      <div class="menus horizontal">
+        <router-link
+          tag="span"
           class="menu-item"
           :class="{ 'actived': activedPath === i.url }"
-          @click="toUrl(i.url)"
+          :to="i.url"
           v-for="i in menus"
           :key="i.name">{{ i.name }}
+        </router-link>
+      </div>
+      <div class="menus vertical">
+        <div class="icon" @click.stop="showDropdownMenus = true">三</div>
+        <div class="list" v-show="showDropdownMenus">
+          <div
+            class="menu-item"
+            :class="{ 'actived': activedPath === i.url }"
+            @click="toUrl(i.url)"
+            v-for="i in menus"
+            :key="i.name">{{ i.name }}
+          </div>
         </div>
       </div>
     </div>
@@ -87,12 +89,16 @@ export default {
   top: 0;
   width: 100%;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: #fff;
   z-index: 100;
   box-shadow: 0 2px 24px 5px rgba(13,37,62,.1);
+  .content {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
   .logo {
     margin-left: 50px;
     display: flex;
