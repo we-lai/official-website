@@ -27,6 +27,7 @@ export default {
 <style lang="scss">
 .v-friends {
   margin-bottom: 100px;
+  min-height: 50vh;
   .brand-title {
     font-size: 30px;
     font-weight: 300;
@@ -64,15 +65,15 @@ export default {
       }
     }
     .bg-pic1 {
-      background: url("../assets/fanwei.jpg") center no-repeat;
+      background: url("../assets/fanwei.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic2 {
-      background: url("../assets/yongyou.jpg") center no-repeat;
+      background: url("../assets/yongyou.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic3 {
-      background: url("../assets/fanruan.jpg") center no-repeat;
+      background: url("../assets/fanruan.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic4 {
@@ -84,7 +85,7 @@ export default {
       background-size: contain;
     }
     .bg-pic6 {
-      background: url("../assets/jindie.jpg") center no-repeat;
+      background: url("../assets/jindie.png") center no-repeat;
       background-size: contain;
     }
   }

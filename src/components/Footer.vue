@@ -2,18 +2,16 @@
   <footer class="v-footer">
     <div class="f-top">
       <div class="f-top-content">
-        <p >联系我们</p>
-        <p class="font-grey tp-20">产品销售 songfeixiang@xinyumation.com</p>
-        <p class="font-grey">人才招聘 xiecheng@xinyumation.com</p>
+        <p class="title">联系我们</p>
+        <p class="space">产品销售 songfeixiang@xinyumation.com</p>
+        <p>人才招聘 xiecheng@xinyumation.com</p>
       </div>
-      <div class="f-top-content">
-        <p>官方微信二维码</p>
-        <img src="../assets/QR-code.jpg" class="qr-img tp-20"/>
+      <div class="f-top-content f-qrcode">
+        <p class="title">官方微信二维码</p>
+        <img src="../assets/QR-code.jpg" class="qr-img"/>
       </div>
     </div>
-    <div class="font-grey">
-      <p class="c-fs-14">Copyright@2019  沪ICP备19028457号</p>
-    </div>
+    <p class="c-fs-14 c-ta-c">Copyright@2019  沪ICP备19028457号</p>
   </footer>
 </template>
 
@@ -25,37 +23,32 @@ export default {
 
 <style lang="scss">
 .v-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   padding: 40px 0px;
-  @media screen and (max-width: 720px) {
-    height: 650px;
-  }
   background-color: rgb(46, 50, 52);
-  .font-grey {
-      font-size: 16px;
-      color: rgb(155, 155, 155);
+  color: rgb(155, 155, 155);
+  .title {
+    color: #fff;
+    margin-bottom: 20px;
   }
   .qr-img {
     width: 120px;
   }
   .f-top {
     display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 720px) {
+    justify-content: space-around;
+    padding-bottom: 30px;
+    @media (max-width: 720px) {
       flex-direction: column;
+      .f-top-content {
+        width: 50%;
+        padding-left: 10%;
+      }
+      .f-qrcode {
+        margin-top: 30px;
+      }
     }
-    width: 80%;
-    padding-bottom: 20px;
-    color: #fff;
-    font-size: 18px;
-    a {
-      text-decoration: none;
-    }
-    .tp-20 {
-      margin: 30px auto;
+    .space {
+      margin-bottom: 15px;
       display: block;
     }
   }

@@ -89,15 +89,15 @@ export default {
       }
     }
     .bg-pic1 {
-      background: url("../assets/fanwei.jpg") center no-repeat;
+      background: url("../assets/fanwei.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic2 {
-      background: url("../assets/yongyou.jpg") center no-repeat;
+      background: url("../assets/yongyou.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic3 {
-      background: url("../assets/fanruan.jpg") center no-repeat;
+      background: url("../assets/fanruan.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic4 {
@@ -109,23 +109,23 @@ export default {
       background-size: contain;
     }
     .bg-pic6 {
-      background: url("../assets/jindie.jpg") center no-repeat;
+      background: url("../assets/jindie.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic7 {
-      background: url("../assets/anjuke.jpg") center no-repeat;
+      background: url("../assets/anjuke.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic8 {
-      background: url("../assets/guangfa.jpg") center no-repeat;
+      background: url("../assets/guangfa.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic9 {
-      background: url("../assets/yidong.jpeg") center no-repeat;
+      background: url("../assets/yidong.png") center no-repeat;
       background-size: contain;
     }
     .bg-pic10 {
-      background: url("../assets/shunfeng.jpeg") center no-repeat;
+      background: url("../assets/shunfeng.png") center no-repeat;
       background-size: contain;
     }
   }

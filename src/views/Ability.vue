@@ -8,10 +8,8 @@
       大数据量高并发数据同步，可视化实时监测保障数据质量等价值，为客户灵
       活的数据消费需求提供强有力的技术驱动。
     </p>
-    <div class="data-img"></div>
-    <!-- <img src="../assets/data.jpg" /> -->
+    <img class="img" src="../assets/data.png">
     <p class="brand-title">功能介绍</p>
-    <div class="data-img1"></div>
     <div class="introduce-wrap">
       <ul class="introduce-text">
         <li class="intro-item">
@@ -43,12 +41,12 @@
         </li>
       </ul>
     </div>
+    <img class="img" src="../assets/data-1.png">
     <div class="area">
       <p class="brand-title">产品特点</p>
       <p class="desc1">B/S架构/自定义表单/自定义流程/简化工作/移动端构建</p>
       <section class="fast card">
         <div class="item">
-          <!-- <img src="../assets/index/icon12.png"> -->
           <div class="circle">Browser</div>
           <div>
             <p class="title">B/S架构</p>
@@ -56,7 +54,6 @@
           </div>
         </div>
         <div class="item">
-          <!-- <img src="../assets/index/icon13.png"> -->
           <div class="circle">Form</div>
           <div>
             <p class="title">自定义表单</p>
@@ -64,7 +61,6 @@
           </div>
         </div>
         <div class="item">
-          <!-- <img src="../assets/index/icon14.png"> -->
           <div class="circle">Activiti</div>
           <div>
             <p class="title">自定义流程</p>
@@ -72,7 +68,6 @@
           </div>
         </div>
         <div class="item">
-          <!-- <img src="../assets/index/icon15.png"> -->
           <div class="circle">Efficiency</div>
           <div>
             <p class="title">简化工作</p>
@@ -80,7 +75,6 @@
           </div>
         </div>
         <div class="item">
-          <!-- <img src="../assets/index/icon16.png"> -->
           <div class="circle">Function</div>
           <div>
             <p class="title">功能打造</p>
@@ -88,27 +82,12 @@
           </div>
         </div>
         <div class="item">
-          <!-- <img src="../assets/index/icon17.png"> -->
           <div class="circle">Mobile</div>
           <div>
             <p class="title">移动端构建</p>
             <p class="desc">电脑端，移动端，一体化建造，可接通钉钉，微信端口等等。</p>
           </div>
         </div>
-        <!-- <div class="item">
-          <img src="../assets/index/icon18.png">
-          <div>
-            <p class="title">咨询服务</p>
-            <p class="desc">全程为客户提供信息化建设咨询服务</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="../assets/index/icon19.png">
-          <div>
-            <p class="title">支持多种设备</p>
-            <p class="desc">支持IOS、Android、微信、电脑平板、手机</p>
-          </div>
-        </div> -->
       </section>
     </div>
   </div>
@@ -137,21 +116,10 @@ export default {
       width: 80%;
       margin: 0 auto;
   }
-  .data-img, .data-img1 {
+  .img {
+    display: block;
     width: 80%;
-    height: 60vh;
-    @media screen and (max-width: 768px) {
-      height: 40vh;
-    }
-    @media screen and (max-width: 768px) {
-      height: 30vh;
-    }
-    margin: 0 auto;
-    background: url("../assets/data.jpg") center no-repeat;
-    background-size: contain;
-  }
-  .data-img1 {
-    background: url("../assets/data-1.jpg") center no-repeat;
+    margin: 20px auto;
   }
   .introduce-wrap {
     width: 72%;
@@ -165,12 +133,13 @@ export default {
       font-weight: 300;
       .intro-item {
         width: 45%;
+        margin-bottom: 30px;
         @media screen and (max-width: 576px) {
           width: 98%;
         }
       }
       .intro-text-sm {
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 16px;
         line-height: 40px;
       }
