@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from './views/Home.vue'
 
 Vue.use(Router)
 const lazyload = component => () => import(`./views/${component}.vue`)
@@ -8,7 +9,7 @@ export default new Router({
   routes: [
     {
       path: '/home',
-      component: lazyload('Home')
+      component: Home
     },
     {
       path: '/resolution',
