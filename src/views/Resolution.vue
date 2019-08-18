@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss">
 .v-resolution {
+  margin-bottom: 100px;
   .brand-title {
     font-size: 30px;
     color: $black;
@@ -57,14 +58,27 @@ export default {
   .img-wrap {
     display: flex;
     flex-wrap: wrap;
-    max-width: 82%;
+    max-width: 80%;
     margin: 30px auto;
     .img-border {
       display: block;
-      width: 180px;
+      width: 15%;
+      margin-left: 1%;
+      @media screen and (max-width: 960px) {
+        width: 30%;
+        margin-left: 2%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 44%;
+        margin-left: 4%;
+      }
+       @media screen and (max-width: 414px) {
+        width: 90%;
+        margin-left: 5%;
+      }
       height: 120px;
+      margin-bottom: 10px;
       border: 1px solid rgb(216, 215, 215);
-      margin: 10px;
     }
     .bg-pic1 {
       background: url("../assets/fanwei.jpg") center no-repeat;
