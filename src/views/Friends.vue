@@ -2,17 +2,23 @@
   <div class="v-friends">
     <p class="brand-title">合作品牌</p>
     <div class="img-wrap">
-      <div class="img-border bg-pic1">
+      <div class="img-border">
+        <img src="../assets/fanwei.png" />
       </div>
-      <div class="img-border bg-pic2">
+      <div class="img-border">
+        <img src="../assets/fanruan.png" />
       </div>
-      <div class="img-border bg-pic3">
+      <div class="img-border">
+        <img src="../assets/lanling.png" />
       </div>
-      <div class="img-border bg-pic4">
+      <div class="img-border">
+        <img src="../assets/jindie.png" />
       </div>
-      <div class="img-border bg-pic5">
+      <div class="img-border">
+        <img src="../assets/zhiyuan.png" />
       </div>
-      <div class="img-border bg-pic6">
+      <div class="img-border">
+        <img src="../assets/yongyou.png" />
       </div>
     </div>
   </div>
@@ -45,7 +51,10 @@ export default {
       width: 15%;
       margin-left: 1%;
       opacity: .75;
-      @media screen and (max-width: 960px) {
+      height: 120px;
+      margin-bottom: 10px;
+      border: 1px solid rgb(236, 234, 234);
+      @media screen and (max-width: 1150px) {
         width: 30%;
         margin-left: 2%;
       }
@@ -57,36 +66,15 @@ export default {
         width: 90%;
         margin-left: 5%;
       }
-      height: 120px;
-      margin-bottom: 10px;
-      border: 1px solid rgb(236, 234, 234);
       &:hover {
         opacity: 1;
       }
-    }
-    .bg-pic1 {
-      background: url("../assets/fanwei.png") center no-repeat;
-      background-size: contain;
-    }
-    .bg-pic2 {
-      background: url("../assets/yongyou.png") center no-repeat;
-      background-size: contain;
-    }
-    .bg-pic3 {
-      background: url("../assets/fanruan.png") center no-repeat;
-      background-size: contain;
-    }
-    .bg-pic4 {
-      background: url("../assets/lanling.png") center no-repeat;
-      background-size: contain;
-    }
-    .bg-pic5 {
-      background: url("../assets/zhiyuan.png") center no-repeat;
-      background-size: contain;
-    }
-    .bg-pic6 {
-      background: url("../assets/jindie.png") center no-repeat;
-      background-size: contain;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
