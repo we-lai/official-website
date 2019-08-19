@@ -3,34 +3,46 @@
     <p class="brand-title">业务案例</p>
     <p class="brand-title-grey">每个案例都是你的参考</p>
     <div class="img-wrap">
-      <div class="img-border bg-pic1">
+      <div class="img-border">
+        <img src="../assets/yidong.png" />
       </div>
-      <div class="img-border bg-pic5">
+      <div class="img-border">
+        <img src="../assets/yongyou.png" />
       </div>
-      <div class="img-border bg-pic3">
+      <div class="img-border">
+        <img src="../assets/jindie.png" />
       </div>
-      <div class="img-border bg-pic4">
+      <div class="img-border">
+        <img src="../assets/guangfa.png" />
       </div>
-      <div class="img-border bg-pic8">
+      <div class="img-border">
+        <img src="../assets/zhiyuan.png" />
       </div>
-      <div class="img-border bg-pic6">
+      <div class="img-border">
+        <img src="../assets/fanruan.png" />
       </div>
     </div>
 
     <p class="brand-title">服务客户</p>
     <p class="brand-title-grey">大家的支持与认可，我们非常感谢</p>
     <div class="img-wrap">
-      <div class="img-border bg-pic10">
+      <div class="img-border">
+        <img src="../assets/guangfa.png" />
       </div>
-      <div class="img-border bg-pic9">
+      <div class="img-border">
+        <img src="../assets/zhiyuan.png" />
       </div>
-      <div class="img-border bg-pic8">
+      <div class="img-border">
+        <img src="../assets/lanling.png" />
       </div>
-      <div class="img-border bg-pic2">
+      <div class="img-border">
+        <img src="../assets/yidong.png" />
       </div>
-      <div class="img-border bg-pic5">
+      <div class="img-border">
+        <img src="../assets/jindie.png" />
       </div>
-      <div class="img-border bg-pic7">
+      <div class="img-border">
+        <img src="../assets/anjuke.png" />
       </div>
     </div>
   </div>
@@ -69,6 +81,9 @@ export default {
       width: 15%;
       margin-left: 1%;
       opacity: .75;
+      height: 120px;
+      margin-bottom: 10px;
+      border: 1px solid rgb(236, 234, 234);
       @media screen and (max-width: 960px) {
         width: 30%;
         margin-left: 2%;
@@ -81,11 +96,14 @@ export default {
         width: 90%;
         margin-left: 5%;
       }
-      height: 120px;
-      margin-bottom: 10px;
-      border: 1px solid rgb(236, 234, 234);
       &:hover {
         opacity: 1;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
     .bg-pic1 {
