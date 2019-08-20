@@ -119,6 +119,9 @@ export default {
       .menu-item {
         margin-left: 20px;
         color: inherit;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     &.vertical {
