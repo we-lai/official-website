@@ -8,4 +8,4 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_b4b6ddef1958_key -iv $encrypted_b4b6ddef1958_iv
   -in ftppass.json.enc -out ftppass.json -d
 after_install:
--npm run deploy
+- npm run deploy
