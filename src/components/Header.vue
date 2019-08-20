@@ -118,6 +118,7 @@ export default {
       margin-right: 50px;
       .menu-item {
         margin-left: 20px;
+        color: inherit;
       }
     }
     &.vertical {
