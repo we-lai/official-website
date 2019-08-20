@@ -7,7 +7,7 @@
       </div>
       <div class="menus horizontal">
         <router-link
-          tag="span"
+          tag="a"
           class="menu-item"
           :class="{ 'actived': activedPath === i.url }"
           :to="i.url"
@@ -18,13 +18,13 @@
       <div class="menus vertical">
         <div class="icon" @click.stop="showDropdownMenus = true">三</div>
         <div class="list" v-show="showDropdownMenus">
-          <div
+          <a
             class="menu-item"
             :class="{ 'actived': activedPath === i.url }"
             @click="toUrl(i.url)"
             v-for="i in menus"
             :key="i.name">{{ i.name }}
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -141,6 +141,7 @@ export default {
         border-top: 2px solid $blue;
         border-bottom: 2px solid $blue;
         .menu-item {
+          display: block;
           height: 34px;
           line-height: 34px;
           font-weight: 400;
