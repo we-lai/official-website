@@ -12,7 +12,9 @@
           <img src="../assets/QR-code.jpg" class="qr-img"/>
         </div>
       </div>
-      <p class="c-fs-14 c-ta-c">Copyright@2019  沪ICP备19028457号</p>
+      <p class="c-fs-14 c-ta-c">
+        @2019 xinyumation.com 版权所有 <a class="copyright" target="_blank" href="http://www.beian.miit.gov.cn">沪ICP备19028457号</a>
+      </p>
     </div>
   </footer>
 </template>
@@ -56,6 +58,13 @@ export default {
     .space {
       margin-bottom: 15px;
       display: block;
+    }
+  }
+  .copyright {
+    color: inherit;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
     }
   }
 }
