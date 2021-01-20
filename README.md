@@ -25,3 +25,5 @@ npm run lint
 ```
 npm run deploy
 ```
+
+网站访问地址：http://www.xinyumation.com/

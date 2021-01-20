@@ -13,7 +13,7 @@
         </div>
       </div>
       <p class="c-fs-14 c-ta-c">
-        @2019 xinyumation.com 版权所有 <a class="copyright" target="_blank" href="http://www.beian.miit.gov.cn">沪ICP备19028457号</a>
+        @2021 xinyumation.com 版权所有 <a class="copyright" target="_blank" href="https://beian.miit.gov.cn/">沪ICP备19028457号-1</a>
       </p>
     </div>
   </footer>
